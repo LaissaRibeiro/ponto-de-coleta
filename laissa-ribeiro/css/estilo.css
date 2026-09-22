@@ -76,27 +76,26 @@ h3 {
 }
 
 .brand {
-  /* marca do site */
-  display: inline-block; /* exibe a marca como bloco em linha */
-  background: var(--color-text-light); /* cor de fundo da marca */
-  color: var(--color-action); /* cor do texto da marca */
-  font-size: 1.1rem; /* tamanho da fonte */
-  font-weight: 900; /* peso da fonte */
-  letter-spacing: 1px; /* espaçamento entre letras */
-  padding: 0.25rem 1rem; /* espaçamento interno */
-  border-radius: var(--radius-pill); /* borda arredondada */
+  display: inline-block; 
+  background: var(--color-action); 
+  color: var(--color-carbon); 
+  font-size: 1.1rem; 
+  font-weight: 900; 
+  letter-spacing: 1px; 
+  padding: 0.25rem 1rem; 
+  border-radius: var(--radius-pill); 
 }
 
-.main-nav a, 
+.main-nav a,
 .site-footer a {
-  color: var(--color-accent); 
-  text-decoration: none; 
-  text-transform: uppercase; 
-  font-weight: bold; 
-  letter-spacing: 0.5px; 
-  display: inline-block; 
-  padding: 0.75rem 1rem; 
-  border-radius: var(--radius); 
+  color: var(--color-accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
 }
 
 .main-nav a:hover, /* seleciona o link ao passar o mouse */
@@ -111,13 +110,13 @@ h3 {
 }
 
 main {
-  padding: var(--space-3); 
-  background: var(--color-text-light); 
+  padding: var(--space-3);
+  background: var(--color-text-light);
   grid-area: content;
 }
 
 main > * + * {
-  margin-top: var(--space-3); 
+  margin-top: var(--space-3);
 }
 
 .intro {
@@ -131,10 +130,10 @@ main > * + * {
 }
 
 .cards {
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-2); 
-  list-style: none; 
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
+  list-style: none;
 }
 
 .card {
@@ -150,17 +149,17 @@ main > * + * {
 }
 
 .card .schedule {
-  color: var(--color-muted); 
-  margin-top: auto; 
+  color: var(--color-muted);
+  margin-top: auto;
 }
 
 .steps {
-  list-style-position: inside; 
+  list-style-position: inside;
 }
 
 .materials-table {
-  width: 100%; 
-  border-collapse: collapse; 
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .materials-table caption {
@@ -184,31 +183,31 @@ main > * + * {
 }
 
 .materials-table tbody tr:nth-child(even) {
-  background: var(--color-surface ); 
+  background: var(--color-surface);
 }
 
-.field { 
-  display: flex; 
-  flex-direction: column; 
-  gap: 0.25rem; 
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: var(--space-2);
 }
 
-.field label {   
- /* display: block; 
-  font-weight: bold; */
+.field label {
+  /* display: block; */
+  font-weight: bold;
 }
 
 .field input,
 .field select,
 .field textarea {
-  font: inherit; 
-  padding: 0.5rem; 
-  border: 1px solid var(--color-border); 
-  border-radius: var(--radius); 
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
 }
 
 button {
-  /* botão */
   font: inherit; /* herda a fonte do elemento pai */
   font-weight: bold; /* negrito */
   text-transform: uppercase; /* transforma o texto em maiúsculas */
@@ -220,10 +219,14 @@ button {
   cursor: pointer; /* cursor do mouse ao passar sobre o botão */
 }
 
-#search-button, /* botão de busca */
+button:hover {
+  filter: brightness(1.1); /* aumenta o brilho do botão ao passar o mouse */
+}
+
+#search-button,
 button[type="submit"] {
-  /* botão de envio do formulário */
-  background: var(--color-action); /* cor de fundo do botão */
+  background: var(--color-action);
+  color: var(--color-carbon);
 }
 
 .filters {
@@ -243,6 +246,26 @@ button[type="submit"] {
 .filter:hover {
   border-color: var(--color-indigo);
   filter: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-action);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: var(--space-1);
+  left: -100vw;
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-surface);
+  color: var(--color-indigo);
+  border: 2px solid var(--color-indigo);
+  z-index: 10;
+}
+
+.skip-link:focus {
+  left: var(--space-1);
 }
 
 .page {
@@ -275,7 +298,7 @@ button[type="submit"] {
 .field-row {
   display: flex;
   gap: var(--space-2);
-  align-items: flex-end;
+  /*align-items: flex-end;*/
 }
 
 .field-row .field {
@@ -303,7 +326,7 @@ button[type="submit"] {
   visibility: hidden;
 }
 
-.map { 
+.map {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -315,4 +338,16 @@ figcaption {
   margin-top: var(--space-1);
   color: var(--color-muted);
   font-size: 0.875rem;
+}
+
+@media (min-width: 64rem) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 64rem) {
+  .field-row {
+    flex-direction: column;
+  }
 }

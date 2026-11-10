@@ -7,23 +7,26 @@
     <title>Sugerir um ponto | Ponto de Coleta</title>
   </head>
   <body>
-    <a  class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
+    <a class="skip-link" href="#content">Pular para o conteúdo</a>
     <div class="page">
       <header class="site-header">
         <h1 class="brand">Ponto de Coleta</h1>
-        <nav class="main-nav" aria-label="Navegação principal">
-          <a href="index.html">Ponto de Coleta </a>
-          <a href="materiais.html">Materiais </a>
-          <a href="contato.html" aria-current="page">Sugerir um ponto </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+          <a href="index.html">Pontos de coleta</a>
+          <a href="materiais.html">Materiais</a>
+          <a href="contato.html" aria-current="page">Sugerir um ponto</a>
         </nav>
       </header>
-      <main id="conteudo">
+
+      <main id="content">
         <h2>Sugerir um ponto de coleta novo</h2>
+
         <p>
-          Conhece um ponto que não está no catálogo? Aqui vai entrar o
-          formulário que recebe a sugestão e a manda para quem cuida do site.
+          Conhece um ponto que não está no catálogo? Preencha os dados abaixo. A sugestão passa por
+          conferência do endereço antes de entrar no catálogo.
         </p>
+
         <form id="suggestion-form">
           <p class="field">
             <label for="name">Nome completo</label>
@@ -33,13 +36,7 @@
           <div class="field-row">
             <p class="field">
               <label for="email">Seu e-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                autocomplete="email"
-              />
+              <input type="email" id="email" name="email" required autocomplete="email" />
             </p>
 
             <p class="field">
@@ -55,13 +52,11 @@
             </p>
 
             <p class="field">
-              <label for="preferred-material"
-                >Material que você mais procura</label
-              >
+              <label for="preferred-material">Material que você mais procura</label>
               <select id="preferred-material" name="preferred-material">
                 <option value="all">Todos</option>
                 <option value="battery">Pilha e bateria</option>
-                <option valeu="cooking-oil">Òleo de cozinha</option>
+                <option value="cooking-oil">Óleo de cozinha</option>
                 <option value="electronics">Eletrônico</option>
                 <option value="medicine">Remédio</option>
                 <option value="glass">Vidro</option>
@@ -85,12 +80,13 @@
           </p>
         </form>
       </main>
+
       <footer class="site-footer">
         <p>Ponto de Coleta, Várzea Grande, MT.</p>
         <p><a href="contato.html">Sugerir um ponto novo</a></p>
       </footer>
     </div>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

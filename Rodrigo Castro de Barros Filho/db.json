@@ -1,0 +1,119 @@
+{
+  "points": [
+    {
+      "id": 1,
+      "name": "Ecoponto Centro-Sul",
+      "neighborhood": "Centro-Sul",
+      "address": "Rua Goiás, 120",
+      "zipCode": "78135-603",
+      "materials": [
+        "battery",
+        "electronics",
+        "glass",
+        "recyclable"
+      ],
+      "schedule": "Segunda a sexta, 8h às 17h"
+    },
+    {
+      "id": 2,
+      "name": "Farmácia Solidária Cristo Rei",
+      "neighborhood": "Cristo Rei",
+      "address": "Avenida Brasil, 845",
+      "zipCode": "",
+      "materials": [
+        "medicine"
+      ],
+      "schedule": "Segunda a sábado, 7h às 19h"
+    },
+    {
+      "id": 3,
+      "name": "Mercado Ponte Nova",
+      "neighborhood": "Ponte Nova",
+      "address": "Avenida da FEB, 310",
+      "zipCode": "",
+      "materials": [
+        "battery",
+        "cooking-oil",
+        "glass",
+        "recyclable"
+      ],
+      "schedule": "Segunda a sábado, 7h às 21h"
+    },
+    {
+      "id": 4,
+      "name": "Escola Municipal Glória",
+      "neighborhood": "Glória",
+      "address": "Rua Justiça, 55",
+      "zipCode": "",
+      "materials": [
+        "cooking-oil",
+        "recyclable"
+      ],
+      "schedule": "Segunda a sexta, 7h às 17h"
+    },
+    {
+      "id": 5,
+      "name": "Posto Costa Verde",
+      "neighborhood": "Costa Verde",
+      "address": "Rua Brigadeiro Eduardo Gomes, 2200",
+      "zipCode": "",
+      "materials": [
+        "battery",
+        "cooking-oil",
+        "electronics"
+      ],
+      "schedule": "Todos os dias, 6h às 22h"
+    },
+    {
+      "id": 6,
+      "name": "UBS Novo Mundo",
+      "neighborhood": "Novo Mundo",
+      "address": "Avenida Porto Rico, 78",
+      "zipCode": "",
+      "materials": [
+        "medicine",
+        "recyclable"
+      ],
+      "schedule": "Segunda a sexta, 7h às 18h"
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "name": "Pilha e bateria",
+      "accepted": "Sim",
+      "howToDeliver": "Solta, em saco plástico"
+    },
+    {
+      "id": 2,
+      "name": "Óleo de cozinha",
+      "accepted": "Sim",
+      "howToDeliver": "Garrafa PET fechada"
+    },
+    {
+      "id": 3,
+      "name": "Remédio vencido",
+      "accepted": "Sim",
+      "howToDeliver": "Na embalagem, com a bula"
+    },
+    {
+      "id": 4,
+      "name": "Vidro",
+      "accepted": "Sim",
+      "howToDeliver": "Inteiro, lavado e seco"
+    },
+    {
+      "id": 5,
+      "name": "Entulho de obra",
+      "accepted": "Não",
+      "howToDeliver": "Levar ao aterro municipal"
+    },
+    {
+      "id": 6,
+      "name": "Pneu",
+      "accepted": "Não",
+      "howToDeliver": "Procurar borracharia credenciada"
+    }
+  ],
+  "suggestions": []
+}

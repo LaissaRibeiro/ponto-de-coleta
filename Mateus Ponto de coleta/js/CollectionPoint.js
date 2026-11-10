@@ -1,8 +1,6 @@
 const CITY = "Várzea Grande";
 const STATE = "MT";
 
-// CONTINUAR DA  ETAPA 4
-
 export class CollectionPoint {
   constructor(dado) {
     this.id = dado.id;
@@ -39,7 +37,5 @@ export class CollectionPoint {
 }
 
 export function toCollectionPoints(records) {
-  return records.map((record) => new CollectionPoint(record)) 
+  return records.map((record) => new CollectionPoint(record));
 }
-
-
